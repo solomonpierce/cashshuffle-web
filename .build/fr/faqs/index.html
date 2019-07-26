@@ -19,8 +19,37 @@
     <meta name="twitter:image" content="https://cashshuffle.com/_assets/img/opengraph-default.jpg" />
     <meta name="twitter:site" content="@cashshuffle">
     <meta name="twitter:creator" content="@cashshuffle">
-    <link href="/_assets/css/styles.min.css" rel="stylesheet" type="text/css" media="all" />
-    <script src="/_assets/js/scripts.min.js" type="text/javascript"></script>
+    <!-- Dev includes: Sitewide CSS -->
+    <link href="/_assets/css/normalize.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/bootstrap.grid.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/bootstrap.ultralite.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/bootstrap.forms.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/bootstrap.basictype.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/webfonts.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/text.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/forms.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/templates.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/navbar-xs.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/navbar-md.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/mobile-nav.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/footer.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/i18n-modal.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/modal-video.min.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Dev includes: Page Specific CSS -->
+    <link href="/_assets/css/home.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/wallets.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/quickstart.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/_assets/css/faqs.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Dev includes: JS -->
+    <script src="/_assets/js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="/_assets/js/modal-video.min.js" type="text/javascript"></script>
+    <script src="/_assets/js/fontawesome.js" type="text/javascript"></script>
+    <script src="/_assets/js/clipboard.js" type="text/javascript"></script>
+    <script src="/_assets/js/mobile-nav.js" type="text/javascript"></script>
+    <script src="/_assets/js/navbar-md.js" type="text/javascript"></script>
+    <script src="/_assets/js/menu-slider.js" type="text/javascript"></script>
+    <script src="/_assets/js/i18n-modal.js" type="text/javascript"></script>
+    <script src="/_assets/js/footer.js" type="text/javascript"></script>
   </head>
   <body>
     <div id="navbar-xs" class="hidden-md hidden-lg">
@@ -267,7 +296,9 @@
         </div>
         <div class="footerDonate">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 131" preserveAspectRatio="none" class="bg-curve top">
-            <path d="M0 131C101.08 87.8 224.38 51.48 359.5 27.71 466.21 8.93 568.66.02 661.04-1H0v131zM661.04 0c13.2-1 26.19.17 38.96.53V-1h-38.96z" fill="#909298"/>
+            <path
+              d="M0 131C101.08 87.8 224.38 51.48 359.5 27.71 466.21 8.93 568.66.02 661.04-1H0v131zM661.04 0c13.2-1 26.19.17 38.96.53V-1h-38.96z"
+              fill="#909298" />
           </svg>
           <div class="wrapper footerDonate-container">
             <img src="/_assets/img/donate-qr.png" class="footerDonate-qr">
@@ -279,7 +310,8 @@
                 </div>
                 <div class="footerDonate-btn" data-clipboard-target=".footerDonate-addressSpan">
                   <div class="footerDonate-btnInner">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" class="footerDonate-copyBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                      class="footerDonate-copyBtn">
                       <path d="M16 8v8H8v4h12V8h-4zm0-2h6v16H6v-6H0V0h16v6zM2 2v12h12V2H2z"></path>
                     </svg>
                   </div>
@@ -288,7 +320,8 @@
             </div>
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 94" preserveAspectRatio="none" class="bg-curve bottom">
-            <path d="M0 90.06V96h700V0c-94.65 33.25-205.31 60.13-324.78 77C238.77 96.26 109.73 99.81 0 90.06z" fill="#4c4c4c"/>
+            <path d="M0 90.06V96h700V0c-94.65 33.25-205.31 60.13-324.78 77C238.77 96.26 109.73 99.81 0 90.06z"
+              fill="#4c4c4c" />
           </svg>
         </div>
         <div class="footerCodes">
@@ -296,21 +329,25 @@
             <div class="footerCode">
               <a href="https://github.com/Electron-Cash/Electron-Cash" target="_blank" class="footerCode-link">
                 <img src="/_assets/svg/ico-github.svg" class="footerCode-icon">
-                <h4 class="footerCode-heading">Logiciel client <img src="/_assets/svg/extlink-footer.svg" class="footer-extLink"></h4>
+                <h4 class="footerCode-heading">Logiciel client <img src="/_assets/svg/extlink-footer.svg"
+                    class="footer-extLink"></h4>
                 <p class="footerCode-text">Notre implémentation de référence peut être trouvé à l&#x27;intérieur du portefeuille bien connu Electron Cash.</p>
               </a>
             </div>
             <div class="footerCode">
               <a href="https://github.com/cashshuffle/cashshuffle" target="_blank" class="footerCode-link">
                 <img src="/_assets/svg/ico-github.svg" class="footerCode-icon">
-                <h4 class="footerCode-heading">Logiciel serveur <img src="/_assets/svg/extlink-footer.svg" class="footer-extLink"></h4>
+                <h4 class="footerCode-heading">Logiciel serveur <img src="/_assets/svg/extlink-footer.svg"
+                    class="footer-extLink"></h4>
                 <p class="footerCode-text">Le logiciel serveur est écrit en Golang et est disponible sur Github.</p>
               </a>
             </div>
             <div class="footerCode">
-              <a href="https://github.com/Electron-Cash/Electron-Cash/wiki/Cashshuffle-Documentation" target="_blank" class="footerCode-link">
+              <a href="https://github.com/Electron-Cash/Electron-Cash/wiki/Cashshuffle-Documentation" target="_blank"
+                class="footerCode-link">
                 <img src="/_assets/svg/ico-docs.svg" class="footerCode-icon">
-                <h4 class="footerCode-heading">Documentation <img src="/_assets/svg/extlink-footer.svg" class="footer-extLink"></h4>
+                <h4 class="footerCode-heading">Documentation <img src="/_assets/svg/extlink-footer.svg"
+                    class="footer-extLink"></h4>
                 <p class="footerCode-text">Documentation technique pour développeurs et passionnés.</p>
               </a>
             </div>
@@ -327,8 +364,13 @@
             </a>
           </div>
         </div>
-      </footer>
-    </div>
+      
+        <script>
+          window.addEventListener('DOMContentLoaded', function () {
+            new ModalVideo("#modal-video", { channel: 'youtube' });
+          });
+        </script>
+      </footer>    </div>
     <div class="i18nModal">
       <div class="i18nModal-content">
         <h1 class="i18nModal-heading">Choisissez votre langue</h1>
